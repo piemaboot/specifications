@@ -32,19 +32,19 @@ puid += value
 
 The value of the PUID of this variant is a complete copy of the value of the UUID from which the PUID was formed. Instead of a category, this variant has 4 more data bits (otherwise the UUID of the 4th variant would not fit)
 
-#### "Случайный" вариант (`01`)
+#### "Random" variant (`01`)
 > ![random variant](images/rr_variant.svg)<br>
 > `V` - variant (`1`); `C` - [category](#categories); `x` - the part (4 bits) of value
 
 This PUID has a value of 15 random bytes
 
-#### "Зарезервированный" вариант (`02`)
+#### "Reversed" variant (`02`)
 > ![reversed variant](images/rr_variant.svg)<br>
 > `V` - variant (`2`); `C` - [category](#categories); `x` - the part (4 bits) of value
 
 The value of the reserved PUID is a sequence number from `0` to `2¹²⁰-1`
 
-#### Основанный на времени вариант (`03`)
+#### Time-based variant (`03`)
 > ![time-based variant](images/time_variant.svg)<br>
 > `V` - variant (`2`); `C` - [category](#categories); `t` - the part (4 bits) of PUID creation time; `x` - the part (4 bits) of random value
 
